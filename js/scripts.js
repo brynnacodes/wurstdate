@@ -7,22 +7,22 @@ function Player(name, score) {
 };
 
 
-  Player.prototype.accrue = function(score) {
-    $("#blink").delay(7000).fadeIn(4000);
-    if (score < 0) {
-      $("p#end-negative-show").delay(7000).fadeIn(4000);
-      $("#name-display3").text(newPlayer.name);
-      $(".footer").delay(7000).fadeIn(4000)
-    } else if (score < 2 && score >= 0) {
-      $("p#end-neutral-show").delay(7000).fadeIn(4000);
-      $("#name-display2").text(newPlayer.name);
-      $(".footer").delay(7000).fadeIn(4000)
-    } else {
-      $("p#end-positive-show").delay(7000).fadeIn(4000);
-      $("#name-display1").text(newPlayer.name);
-      $(".footer").delay(7000).fadeIn(4000)
-    }
-  };
+Player.prototype.accrue = function(score) {
+  $("#blink").delay(7000).fadeIn(4000);
+  if (score < 0) {
+    $("p#end-negative-show").delay(7000).fadeIn(4000);
+    $("#name-display3").text(newPlayer.name);
+    $(".footer").delay(7000).fadeIn(4000)
+  } else if (score < 2 && score >= 0) {
+    $("p#end-neutral-show").delay(7000).fadeIn(4000);
+    $("#name-display2").text(newPlayer.name);
+    $(".footer").delay(7000).fadeIn(4000)
+  } else {
+    $("p#end-positive-show").delay(7000).fadeIn(4000);
+    $("#name-display1").text(newPlayer.name);
+    $(".footer").delay(7000).fadeIn(4000)
+  }
+};
 
 var newPlayer = new Player(name, score);
 
@@ -59,7 +59,7 @@ $(document).ready(function() {
     }
     $("#" + answerShow).show();
 
-    $("#" + answerShow).fadeOut(9000);
+    $("#" + answerShow).fadeOut(11000);
 
     $(".frame"+tracker+"-answers").hide();
     tracker += 1;

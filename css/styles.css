@@ -24,6 +24,7 @@ input {
 }
 
 #choose {
+  padding-top: 10px;
   color: #FCBA04;
   font-weight: bold;
 }
@@ -31,12 +32,13 @@ input {
 .choice-box {
   background-color: rgba(0, 0, 0, 0.5);
   font-family: 'Homenaje', sans-serif;
-  /*text-align: center;*/
+  text-align: center;
   width: 470px;
   height: 180px;
   position: absolute;
   top: 310px;
-  left: 25%;
+  left: 50%;
+  margin-top: 300px;
   display: none;
 }
 
@@ -103,24 +105,24 @@ input {
 }
 
 @keyframes blink {
-    0% {
-        opacity: 1;
-        color:#e53b99;
-    }
-    25%{
+  0% {
+    opacity: 1;
+    color:#e53b99;
+  }
+  25%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 1;
+    color: #15B82B;
+  }
+  75% {
       opacity: 0;
-    }
-    50%{
-      opacity: 1;
-      color: #15B82B;
-    }
-    75% {
-        opacity: 0;
-    }
-    100%{
-      opacity:1;
-      color: #FFB800;;
-    }
+  }
+  100%{
+    opacity:1;
+    color: #FFB800;;
+  }
 }
 
 #restart {
@@ -142,7 +144,7 @@ input {
 #start-playing{
   background-color: #FF40B8;
   font-family: 'Dancing Script', cursive;
-  font-size: 14px;
+  font-size: 20px;
 
 }
 
